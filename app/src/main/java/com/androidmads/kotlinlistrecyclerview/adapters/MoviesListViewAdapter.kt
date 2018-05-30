@@ -40,7 +40,7 @@ class MoviesListViewAdapter(private val activity: Activity, moviesList: List<Mov
 
     @SuppressLint("InflateParams", "ViewHolder")
     override fun getView(i: Int, convertView: View?, viewGroup: ViewGroup): View {
-        var vi: View = convertView as View
+        var vi: View //= convertView as View
         val inflater = activity.getSystemService(Context.LAYOUT_INFLATER_SERVICE) as LayoutInflater
         vi = inflater.inflate(R.layout.movie_list_row, null)
         val title = vi.findViewById<TextView>(R.id.title)

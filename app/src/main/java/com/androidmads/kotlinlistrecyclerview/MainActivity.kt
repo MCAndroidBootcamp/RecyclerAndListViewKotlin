@@ -3,7 +3,10 @@ package com.androidmads.kotlinlistrecyclerview
 import android.content.Intent
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
+import android.support.v7.widget.AppCompatButton
+import android.support.v7.widget.RecyclerView
 import android.view.View
+import android.widget.ListView
 
 class MainActivity : AppCompatActivity() {
 
@@ -11,11 +14,11 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        findViewById(R.id.btnListView).setOnClickListener {
+        findViewById<AppCompatButton>(R.id.btnListView).setOnClickListener {
             startActivity(Intent(applicationContext, ListViewActivity::class.java))
         }
 
-        findViewById(R.id.btnRecView).setOnClickListener {
+        findViewById<AppCompatButton>(R.id.btnRecView).setOnClickListener {
             startActivity(Intent(applicationContext, RecyclerViewActivity::class.java))
         }
     }

@@ -24,7 +24,7 @@ class RecyclerViewActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_recyclerview)
 
-        recyclerView = findViewById(R.id.recyclerView) as RecyclerView
+        recyclerView = findViewById(R.id.recyclerView)
 
         mAdapter = MoviesRecyclerAdapter(movieList)
         val mLayoutManager = LinearLayoutManager(applicationContext)
@@ -62,6 +62,28 @@ class RecyclerViewActivity : AppCompatActivity() {
 
         movie = Movies("The LEGO Movies", "Animation", "2014")
         movieList.add(movie)
+
+        movie = Movies("Iron Man", "Action & Adventure", "2008")
+        movieList.add(movie)
+
+        movie = Movies("Aliens", "Science Fiction", "1986")
+        movieList.add(movie)
+
+        movie = Movies("Chicken Run", "Animation", "2000")
+        movieList.add(movie)
+
+        movie = Movies("Back to the Future", "Science Fiction", "1985")
+        movieList.add(movie)
+
+        movie = Movies("Raiders of the Lost Ark", "Action & Adventure", "1981")
+        movieList.add(movie)
+
+        movie = Movies("Goldfinger", "Action & Adventure", "1965")
+        movieList.add(movie)
+
+        movie = Movies("Guardians of the Galaxy", "Science Fiction & Fantasy", "2014")
+        movieList.add(movie)
+
 
         movie = Movies("Iron Man", "Action & Adventure", "2008")
         movieList.add(movie)
